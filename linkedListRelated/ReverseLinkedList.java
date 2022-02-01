@@ -1,20 +1,26 @@
 package linkedListRelated;
 
+/*
+ * Given the head of a singly linked list, reverse the list, and return the reversed list.
+ * 
+ */
+
 public class ReverseLinkedList {
 
 	public static ListNode reverseList(ListNode head) {
 		if(head == null || head.next == null) {
 			return head;
 		}
+		
 		ListNode curr = new ListNode(head.val);
 		ListNode prev = new ListNode(head.val);
-		ListNode temp = head.next;
+		head = head.next;
 		
-		while(temp!= null) {
-			curr = new ListNode(temp.val);
+		while(head!= null) {
+			curr = new ListNode(head.val);
 			curr.next = prev;
 			prev = curr;
-			temp = temp.next;
+			head = head.next;
 		}
 		
         return curr;

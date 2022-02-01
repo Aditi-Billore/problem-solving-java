@@ -1,7 +1,6 @@
 package arrayRelated;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ReshapeMatrix {
@@ -27,8 +26,7 @@ public class ReshapeMatrix {
         		for(int j =0;j< c;j++) {
         			newMat[i][j] = list1.get(count++);
         		}
-        	}
-        	
+        	}      	
         	       	
         	return newMat;
         }

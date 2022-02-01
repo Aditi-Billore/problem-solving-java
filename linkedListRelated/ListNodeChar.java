@@ -13,9 +13,10 @@ public class ListNodeChar {
 	public ListNodeChar(char val) {
 		this.val = val;
 		this.next = null;
+		this.prev = null;
 	}
 	
-	public ListNodeChar(char val, ListNode node) {
+	public ListNodeChar(char val, ListNodeChar node) {
 		this.val = val;
 		this.next = node;
 	}
